@@ -1,6 +1,6 @@
 public class Afisha {
-    private static String[] movies = new String[0];
-    private static int limit;
+    private String[] movies = new String[0];
+    private int limit;
 
     public Afisha(int limit) {
         this.limit = limit;
@@ -16,10 +16,10 @@ public class Afisha {
         tmp[tmp.length - 1] = movie;
         movies = tmp;
     }
-    public static String[] findAll() {
+    public String[] findAll() {
         return movies;
     }
-    public static String[] findLast() {
+    public String[] findLast() {
         int resultSize = limit < movies.length ? limit : movies.length;
         String[] result = new String[resultSize];
         for (int i = 0; i < resultSize; i++) {
